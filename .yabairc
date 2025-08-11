@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+
+# --------------------------
+# 基本設定（自動タイル・リサイズ禁止）
+# --------------------------
+yabai -m config layout float
+yabai -m config auto_balance off
+yabai -m config window_gap 0
+yabai -m config mouse_follows_focus off
+yabai -m config focus_follows_mouse off
+
+# すべてのアプリを管理対象外に
+yabai -m rule --add app=".*" manage=off
+
+# --------------------------
+# キーバインド（例）
+# skhdと組み合わせて使う想定
+# --------------------------
+# window id取得: yabai -m query --windows --window
+# フォーカス移動例:
+# yabai -m window --focus west
+# yabai -m window --focus east
+# yabai -m window --focus north
+# yabai -m window --focus south
+
