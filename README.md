@@ -50,17 +50,6 @@ chmod +x simple_window_switcher.sh
 tail -f simple_switcher.log
 ```
 
-### 5. キーボードショートカット設定（推奨）
-
-```bash
-# ~/.skhdrc に追加（skhdを使用している場合）
-# パスは実際の場所に置き換えてください
-cmd - grave : /path/to/scripts/simple_switcher/simple_window_switcher.sh
-
-# 例: ホームディレクトリの場合
-cmd - grave : ~/scripts/simple_switcher/simple_window_switcher.sh
-```
-
 ## 🔧 設定ファイル (`config.sh`)
 
 | 設定項目 | デフォルト | 説明 |
